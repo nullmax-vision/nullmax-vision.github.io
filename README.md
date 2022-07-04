@@ -1,20 +1,20 @@
-# NM10K
+<br>
 ## Abstract
 ![](./assets/images/rare-object.png)
-Detection of rare objects (e.g., traffic cones, traffic barrels and traffic warning triangles) is an important perception task to improve the safety of autonomous driving. Training of such models typically requires a large number of annotated data which is expensive and time consuming to obtain. To address the above problem, an emerging approach is to apply data augmentation to automatically generate costfree training samples. In this work, we propose a systematic study on simple Copy-Paste data augmentation for rare object detection in autonomous driving. Specifically, local adaptive instance-level image transformation is introduced to generate realistic rare object masks from source domain to the target domain. Moreover, traffic scene context is utilized to guide the placement of masks of rare objects. To this end, our data augmentation generates training data with high quality and realistic characteristics by leveraging both local and global consistency. In addition, we build a new dataset named NM10k consisting 10k training images, 4k validation images and the corresponding labels with a diverse range of scenarios in autonomous driving. Experiments on NM10k show that our method achieves promising results on rare object detection. We also present a thorough study to illustrate the effectiveness of our local-adaptive and global constraints based Copy-Paste data augmentation for rare object detection. For more details, please refer to [our paper](https://arxiv.org/pdf/2205.00376.pdf).
+Detection of rare objects (e.g., traffic cones, traffic barrels and traffic warning triangles) is an important perception task to improve the safety of autonomous driving. Training of such models typically requires a large number of annotated data which is expensive and time consuming to obtain. To address the above problem, an emerging approach is to apply data augmentation to automatically generate costfree training samples. In this work, we propose a systematic study on simple Copy-Paste data augmentation for rare object detection in autonomous driving. Specifically, local adaptive instance-level image transformation is introduced to generate realistic rare object masks from source domain to the target domain. Moreover, traffic scene context is utilized to guide the placement of masks of rare objects. To this end, our data augmentation generates training data with high quality and realistic characteristics by leveraging both local and global consistency. In addition, we build a new dataset named ROD consisting 10k training images, 4k validation images and the corresponding labels with a diverse range of scenarios in autonomous driving. Experiments on ROD dataset show that our method achieves promising results on rare object detection. We also present a thorough study to illustrate the effectiveness of our local-adaptive and global constraints based Copy-Paste data augmentation for rare object detection. For more details, please refer to [our paper](https://arxiv.org/pdf/2205.00376.pdf).
 
 ## Reference
   * Traffic Context Aware Data Augmentation for Rare Object Detection in Autonomous Driving},<br>
   Naifan Li, Fan Song, Ying Zhang, Pengpeng Liang, Erkang Cheng<br>
   ICRA, 2022
 
-## NM10k Dataset
+## ROD
 
 ![](./assets/images/overview-dataset.png)
 
-**NM10k** is a new diverse real-world dataset from [Nullmax](http://nullmax.ai/), consisting **10k training images (640x384)**, **4k validation images (640x384)** and corresponding 2D bounding box annotations with 5 representative object categories (car, truck, bus, pedestrian, bicycle). The dataset also covers a diverse range of scenarios, such as different road grades (e.g. highway, expressway, city street and country road), different weathers (e.g. sunny, cloudy and rainy) and different times of day (e.g. daytime, evening and night). In addition, we also make 1k traffic cone masks, 100 traffic barrel masks, and 50 traffic warning triangle masks available to the community. 
+**ROD** is a new diverse real-world dataset from [Nullmax](http://nullmax.ai/), consisting **10k training images (640x384)**, **4k validation images (640x384)** and corresponding 2D bounding box annotations with 5 representative object categories (car, truck, bus, pedestrian, bicycle). The dataset also covers a diverse range of scenarios, such as different road grades (e.g. highway, expressway, city street and country road), different weathers (e.g. sunny, cloudy and rainy) and different times of day (e.g. daytime, evening and night). In addition, we also make 1k traffic cone masks, 100 traffic barrel masks, and 50 traffic warning triangle masks available to the community. 
 
-Below is the statistics of our NM10k dataset:
+Below is the statistics of our ROD dataset:
 
 
 ![](./assets/images/stats.png)
